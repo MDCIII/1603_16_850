@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<urn:mdciii:1603:16()>
+    a skos:ConceptScheme ;
+    rdfs:label "(1603:16)" .
+
+<urn:mdciii:1603:16:850()>
+    a skos:Collection ;
+    rdfs:label "(1603:16:850)" ;
+    skos:inScheme <urn:mdciii:1603:16()> ;
+    skos:member <urn:mdciii:1603:16:850:1()> .
+
+<urn:mdciii:1603:16:850:1()>
+    a skos:Collection ;
+    rdfs:label "(1603:16:850:1)" ;
+    skos:member <urn:mdciii:1603:16:850:1:20>, <urn:mdciii:1603:16:850:1:30> .
+
+<urn:mdciii:1603:16:850:1(1)>
+    a owl:Ontology .
+
+<urn:mdciii:1603:16:850:1:10>
+    a owl:Thing, skos:Concept ;
+    rdfs:label "1603:16:850:1:10" ;
+    skos:prefLabel "St. Croix"@eng-Latn .
+
+<urn:mdciii:1603:16:850:1:20>
+    a owl:Thing, skos:Concept ;
+    rdfs:label "1603:16:850:1:20" ;
+    skos:prefLabel "St. John"@eng-Latn .
+
+<urn:mdciii:1603:16:850:1:30>
+    a owl:Thing, skos:Concept ;
+    rdfs:label "1603:16:850:1:30" ;
+    skos:prefLabel "St. Thomas"@eng-Latn .
+
